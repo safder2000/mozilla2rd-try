@@ -1,0 +1,192 @@
+body{
+    
+}
+.header{
+    height: 200px;
+    box-shadow: 5px 10px #888888;
+}
+.Main-container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px,1fr));
+    grid-auto-rows: 890px;
+    
+}
+@media screen and (max-width:700px){
+    .Main-container{
+        
+    grid-template-columns:minmax(700px,1fr);
+    }
+    .container-right{
+        
+    }
+
+}
+.container-left{
+    display: grid;
+    grid-template-columns:repeat(3,3fr);
+    grid-template-areas: "head head head"
+                          "para para para"
+                           "btn btn btn";
+    grid-template-rows:3fr 2fr 1fr;
+    background-color: rgb(255, 255, 255);
+    padding: 80px;
+    color: rgb(15, 16, 16);
+}
+.container-left h1{
+    grid-area: head;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.container-left p{
+    grid-area: para;
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+@media screen and (max-width: 800px) {
+    .container-left h1{
+        height: 100px;
+width: 60%;
+font-size: 38px;
+text-align: center;
+margin-bottom: 2px;
+padding: 0px;
+    }
+    .container-left p{
+         margin-top: -20px;
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+   
+    .container-left button{
+       justify-self: center;
+    }
+    .container-left{
+        padding: 0px;
+        grid-template-rows:2fr 2fr 1fr;
+    }
+}
+.container-left button{
+    grid-area: btn;
+    background-color: rgb(223, 12, 12);
+    color: aliceblue;
+font-size: 23px;
+font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    width: 280px;
+    height: 70px;
+    text-align: center;
+}
+.container-left button:hover{
+    background-color: rgb(173, 8, 8);
+}
+.container-right{
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+color: red;
+}
+.container-right img{
+max-width:120%;
+max-height:100%;
+
+}
+/* ------------------------------2nd container-------------------------------------- */
+.split-container-2{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px,1fr));
+    grid-auto-rows: 890px;
+    
+}
+@media screen and (max-width:700px){
+    .split-container{
+        
+    grid-template-columns:minmax(700px,1fr);
+    }
+    .split-container-right{
+        
+    }
+
+}
+.split-container-left{
+    display: grid;
+    grid-template-columns:repeat(3,3fr);
+    grid-template-areas: "head head head"
+                          "para para para"
+                           "btn btn btn";
+    grid-template-rows:3fr 2fr 1fr;
+    background-color: rgb(255, 255, 255);
+    padding: 80px;
+    color: rgb(15, 16, 16);
+}
+.split-container-left h1{
+    font-family: "Zilla Slab",'Inter','X-LocaleSpecific','sans-serif';
+    grid-area: head;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.split-container-left p{
+    grid-area: para;
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+@media screen and (max-width: 800px) {
+    .split-container-left h1{
+        height: 200px;
+        width: 100%;
+        font-size: 55px;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    .split-container-left p{
+         margin-top: -20px;
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+   
+    .split-container-left button{
+       justify-self: center;
+    }
+    .split-container-left{
+        padding: 0px;
+        grid-template-rows:2fr 2fr 1fr;
+    }
+}
+.split-container-left button{
+    grid-area: btn;
+    background-color: rgb(223, 12, 12);
+    color: aliceblue;
+font-size: 23px;
+font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    width: 280px;
+    height: 70px;
+    text-align: center;
+}
+.split-container-left button:hover{
+    background-color: rgb(173, 8, 8);
+}
+.split-container-right{
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+color: red;
+}
+.split-container-right img{
+max-width:100%;
+max-height:100%;
+
+}
